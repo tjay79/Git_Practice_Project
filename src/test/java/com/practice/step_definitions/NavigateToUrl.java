@@ -8,10 +8,10 @@ import io.cucumber.java.en.Given;
 
 public class NavigateToUrl {
 
-    WebElement button = Driver.getDriver().findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']"));
 
     @And("accepts cookies")
     public void acceptsCookies() {
+        WebElement button = Driver.getDriver().findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']"));
         button.click();
 
     }
